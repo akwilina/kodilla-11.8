@@ -1,0 +1,22 @@
+{
+  "name": "zad11.8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akwilina/kodilla-11.8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akwilina/kodilla-11.8/issues"
+  },
+  "homepage": "https://github.com/akwilina/kodilla-11.8#readme",
+  "devDependencies": {
+    "eslint": "^3.18.0"
+  }
+}
