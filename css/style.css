@@ -109,11 +109,34 @@ section.container {
     width: 700px;
     text-align: center;
     margin: 50px auto;
-    border: solid black 1px;
+    border-bottom: solid black 1px;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
     padding: 20px 80px;
     color: #8B8B8B;
     font-size: 15px;
 }
+
+.container-small h1:before {
+    height: 1px;
+    width: 40%;
+    margin: 7px 10px;
+    background-color: #F3F3F3;
+    content: "";
+    display: inline-block;
+    float: right;
+}
+
+.container-small h1:after {
+    height: 1px;
+    width: 40%;
+    margin: 7px 10px;
+    background-color: #F3F3F3;
+    content: "";
+    display: inline-block;
+    float: right;
+}
+
 
 .container-small h1 {
     padding: 5px;
