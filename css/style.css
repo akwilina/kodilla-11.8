@@ -189,37 +189,17 @@ body {
 .gallery img {
     opacity: 0.3;
     width: 100%;
-    height: 100%;
-    transition: 0.3s;
-}
-
-.gallery .layer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-}
-
-.gallery .layer:hover img {
-    opacity: 1;
-    cursor: pointer;
-}
-
-.gallery .layer:hover h2 {
-    left: 70%;
-    text-shadow: 3px 3px 5px black;
-    cursor: pointer;
+    vertical-align: middle;
 }
 
 .gallery h2 {
     position: absolute;
-    transition: 0.3s;
     text-transform: uppercase;
     font-weight: bold;
-    top: 70%;
+    transition: all 0.7s;
     left: 10%;
+    top: 70%;
+    transform: translateX(0);
     color: white;
     z-index: 2;
     letter-spacing: 4px;
@@ -228,9 +208,21 @@ body {
 
 .gallery .layer {
     border: solid white;
-    overflow: hidden;
     position: relative;
     z-index: 1;
+}
+
+.gallery .layer:hover img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.gallery .layer:hover h2 {
+    left: 100%;
+    transform: translateX(-110%);
+    text-shadow: 3px 3px 5px black;
+    cursor: pointer;
+    vertical-align: middle;
 }
 
 /*contact section*/
@@ -297,15 +289,17 @@ footer .logo {
     }
 
     .gallery h2 {
-        left: 50%;
-        top: 50%;
         text-shadow: 3px 3px 5px black;
         background-color: rgba(0,0,0,0.7);
+        top: 50%;
+        left: 50%;
+        transform: translateX(0);
     }
 
     .gallery .layer:hover h2 {
-        left: 50%;
         top: 50%;
+        left: 50%;
+        transform: translateX(0);
     }
 }
 
@@ -348,14 +342,16 @@ footer .logo {
     }
 
     .gallery h2 {
-        left: 50%;
-        top: 50%;
         text-shadow: 3px 3px 5px black;
         background-color: rgba(0,0,0,0.7);
+        top: 50%;
+        left: 50%;
+        transform: translateX(0);
     }
 
     .gallery .layer:hover h2 {
-         left: 50%;
-         top: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(0);
     }
 }
